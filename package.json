@@ -1,0 +1,27 @@
+{
+    "name": "receptive",
+    "version": "1.0.0",
+    "main": "index.js",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "Neury Aguasvivas <neury.developer@gmail.com> (https://minimalist-dev.github.io/)",
+    "contributors": [],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Minimalist-dev/receptive.git"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Minimalist-dev/receptive/issues"
+    },
+    "homepage": "https://github.com/Minimalist-dev/receptive#readme",
+    "description": ""
+}
