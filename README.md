@@ -1,6 +1,6 @@
 # receptivo
 
-This is a package developed to save work, time, resources on unit tests. Returning a response of two, the one expected or the result or fill value, which has been passed if the condition is not met.
+This is a package developed to save work, time, resources on unit tests. Returning a response of two, the one expected or the result or fill value, which has been passed if the condition is not met. In its simplest functionality.
 
 ```js
 const receptive = require('receptive')
