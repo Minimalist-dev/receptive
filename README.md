@@ -10,15 +10,20 @@
 const receptive = require('receptive')
 
 let error = null;
-let trust = true;
+let trust = true;//any value, object, element, etc. that you want to return if the error condition is not met.
 
-receptive.paddingOne = 0;//any value, object, element, etc. that you want to return if the condition is not met
+receptive.paddingOne = 0;//any value, object, element, etc. that you want to return if the error condition is met. The default value is only set once unless you want to change it.
 
-receptive.value(error, trust, receptive.paddingOne);//return 0
+receptive.value(error, trust, receptive.paddingOne);//return 0.
 
 error = true;
 
-receptive.value(error, trust, receptive.paddingOne);//return true
+receptive.value(error, trust, receptive.paddingOne);//return true.
+
+/* More
+-------------------------------------------------------------------------------*/
+receptive.value("false", "true", receptive.paddingOne);
+receptive.valueOptionTwo(not, yes, receptive.paddingTwo, receptive.paddingThree)
 ```
 
 ## Installation
