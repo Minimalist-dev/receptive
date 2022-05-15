@@ -7,14 +7,18 @@
   [![NPM Downloads][npm-downloads-image]][npm-downloads-url]
 
 ```js
-const express = require('express')
-const app = express()
+const receptive = require('receptive')
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
+let error = null;
+let trust = true;
 
-app.listen(3000)
+receptive.paddingOne = 0;//any value, object, element, etc. that you want to return if the condition is not met
+
+receptive.value(error, trust, receptive.paddingOne);//return 0
+
+error = true;
+
+receptive.value(error, trust, receptive.paddingOne);//return true
 ```
 
 ## Installation
