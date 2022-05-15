@@ -1,10 +1,6 @@
-[![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)
+#receptivo
 
-  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org).
-
-  [![NPM Version][npm-version-image]][npm-url]
-  [![NPM Install Size][npm-install-size-image]][npm-install-size-url]
-  [![NPM Downloads][npm-downloads-image]][npm-downloads-url]
+This is a package developed to save work, time, resources on unit tests. Returning a response of two, the one expected or the result or fill value, which has been passed if the condition is not met.
 
 ```js
 const receptive = require('receptive')
