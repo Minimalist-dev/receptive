@@ -16,7 +16,7 @@ error = true;
 
 receptive.value(error, trust, receptive.paddingOne);//return true.
 
-/* More
+/* Etc...
 -------------------------------------------------------------------------------*/
 receptive.value("false", "true", receptive.paddingOne);
 receptive.valueOptionTwo("false", "true", receptive.paddingTwo, receptive.paddingThree)
