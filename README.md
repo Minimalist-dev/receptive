@@ -19,7 +19,7 @@ receptive.value(error, trust, receptive.paddingOne);//return true.
 /* More
 -------------------------------------------------------------------------------*/
 receptive.value("false", "true", receptive.paddingOne);
-receptive.valueOptionTwo(not, yes, receptive.paddingTwo, receptive.paddingThree)
+receptive.valueOptionTwo("false", "true", receptive.paddingTwo, receptive.paddingThree)
 ```
 
 ## Installation
