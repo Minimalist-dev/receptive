@@ -29,19 +29,19 @@ receptive.valueOptionTwo("false", "true", receptive.paddingTwo, receptive.paddin
 ```js
 const receptive = require('receptive')
 
-let left = "false";
+let left  = "false";
 let right = "false";
 
 receptive.paddingOne = "Not available";
 
 receptive.value(left, right, receptive.paddingOne);//return "Not available".
 
-left = "false";
+left  = "false";
 right = "true";
 
 receptive.value(left, right, receptive.paddingOne);//return "true".
 
-left = "true";
+left  = "true";
 right = "true";
 
 receptive.value(left, right, right);//return "true".
@@ -52,19 +52,19 @@ receptive.value(left, right, right);//return "true".
 ```js
 const receptive = require('receptive');
 
-let left = 0;
+let left  = 0;
 let right = 0;
 
 receptive.paddingOne = 0;
 
 receptive.value(left, right, receptive.paddingOne);//return 0.
 
-left = 0;
+left  = 0;
 right = 1;
 
 receptive.value(left, right, receptive.paddingOne);//return 1.
 
-left = 1;
+left  = 1;
 right = 1;
 
 receptive.value(left, right, right);//return 1.
@@ -75,22 +75,39 @@ receptive.value(left, right, right);//return 1.
 ```js
 const receptive = require('receptive');
 
-let left = false;
+let left  = false;
 let right = false;
 
 receptive.paddingOne = false;
 
 receptive.value(left, right, receptive.paddingOne);//return false.
 
-left = false;
+left  = false;
 right = true;
 
 receptive.value(left, right, receptive.paddingOne);//return true.
 
-left = true;
+left  = true;
 right = true;
 
 receptive.value(left, right, right);//return true.
+```
+
+### Array
+
+```js
+const receptive = require('receptive');
+
+let left  = ["string", { res: "Not available" }, false  ];
+let right = ["string", { res: "Available"     }, true   ];
+
+receptive.paddingOne = left[1].res;
+
+receptive.value(left[0], right[0], receptive.paddingOne);//return "Not available".
+
+receptive.value(left[0], right[1].res, receptive.paddingOne);//return "Available".
+
+receptive.value(left[0], right[0], right[2]);//return true.
 ```
 
 ## Installation
