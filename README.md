@@ -113,6 +113,8 @@ receptive.value(left[0], right[0], right[2]);//return true.
 ### Object
 
 ```js
+const receptive = require('receptive');
+
 let left  = { 
     res:  "Not available", 
     more: "Available"
