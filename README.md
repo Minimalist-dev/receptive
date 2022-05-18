@@ -70,6 +70,28 @@ right = 1;
 receptive.value(left, right, right);//return 1.
 ```
 
+### Boolean
+
+```js
+const receptive = require('receptive');
+
+let left = false;
+let right = false;
+
+receptive.paddingOne = false;
+
+receptive.value(left, right, receptive.paddingOne);//return false.
+
+left = false;
+right = true;
+
+receptive.value(left, right, receptive.paddingOne);//return true.
+
+left = true;
+right = true;
+receptive.value(left, right, right);//return true.
+```
+
 ## Installation
 
 This is a [Node.js](https://nodejs.org/en/) module available through the
