@@ -6,13 +6,13 @@ This is a package developed to save work, time, resources on unit tests. Returni
 const receptive = require('receptive')
 
 let error = null;
-let trust = true;//any value, object, element, etc. that you want to return if the error condition is not met.
+let trust = null;//any value, object, element, etc. that you want to return if the error condition is not met.
 
 receptive.paddingOne = 0;//any value, object, element, etc. that you want to return if the error condition is met. The default value is only set once unless you want to change it.
 
 receptive.value(error, trust, receptive.paddingOne);//return 0.
 
-error = true;
+trust = true;
 
 receptive.value(error, trust, receptive.paddingOne);//return true.
 
