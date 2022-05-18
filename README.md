@@ -47,6 +47,29 @@ right = "true";
 receptive.value(left, right, right);//return "true".
 ```
 
+### Number
+
+```js
+const receptive = require('receptive');
+
+let left = 0;
+let right = 0;
+
+receptive.paddingOne = 0;
+
+receptive.value(left, right, receptive.paddingOne);//return 0.
+
+left = 0;
+right = 1;
+
+receptive.value(left, right, receptive.paddingOne);//return 1.
+
+left = 1;
+right = 1;
+
+receptive.value(left, right, right);//return 1.
+```
+
 ## Installation
 
 This is a [Node.js](https://nodejs.org/en/) module available through the
