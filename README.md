@@ -22,6 +22,31 @@ receptive.value("false", "true", receptive.paddingOne);
 receptive.valueOptionTwo("false", "true", receptive.paddingTwo, receptive.paddingThree)
 ```
 
+## More ways to take advantage of its functionality
+
+### String
+
+```js
+const receptive = require('receptive')
+
+let left = "false";
+let right = "false";
+
+receptive.paddingOne = "Not available";
+
+receptive.value(left, right, receptive.paddingOne);//return "Not available".
+
+left = "false";
+right = "true";
+
+receptive.value(left, right, receptive.paddingOne);//return "true".
+
+left = "true";
+right = "true";
+
+receptive.value(left, right, right);//return "true".
+```
+
 ## Installation
 
 This is a [Node.js](https://nodejs.org/en/) module available through the
