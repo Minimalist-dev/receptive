@@ -110,6 +110,27 @@ receptive.value(left[0], right[1].res, receptive.paddingOne);//return "Available
 receptive.value(left[0], right[0], right[2]);//return true.
 ```
 
+### Object
+
+```js
+let left  = { 
+    res:  "Not available", 
+    more: "Available"
+}; 
+
+let right = { 
+    res:  "Available",
+    more: "Not available"
+};
+
+receptive.paddingOne = left.res;
+
+receptive.value(left.more, right.res, receptive.paddingOne);//return "Not available".
+
+receptive.value(left.res, right.res, receptive.paddingOne);//return "Available".
+
+receptive.value(left.more, right.res, right.res);//return "Available".
+```
 ## Installation
 
 This is a [Node.js](https://nodejs.org/en/) module available through the
