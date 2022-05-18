@@ -89,6 +89,7 @@ receptive.value(left, right, receptive.paddingOne);//return true.
 
 left = true;
 right = true;
+
 receptive.value(left, right, right);//return true.
 ```
 
