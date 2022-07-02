@@ -29,7 +29,7 @@ receptive.valueOptionTwo("false", "true", receptive.paddingTwo, receptive.paddin
 `operator(value, operator, equivalent)` 
 - receives three parameters the **value** to compare the **operator** and the **equivalent** of the value, if the condition is met it returns the equivalent.
 
-`operator(value, operator, equivalent, return)` 
+`operatorPlus(value, operator, equivalent, return)` 
 - the same as the **operator()** function but in this case it returns the fourth parameter, if the condition is met.
 
 ## More ways to take advantage of its functionality
