@@ -22,7 +22,9 @@ receptive.value(error, trust, receptive.paddingOne);//return true.
 
 ## Functions
 `value(not, yes, res)` 
+
 `valueOptionTwo(not, yes, res, otherwise)` 
+
 `operator(value, "operator", equivalent)` 
 - receives three parameters the **value** to compare the **operator** and the **equivalent** of the value, if the condition is met it returns the equivalent.
 
