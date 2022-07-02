@@ -1,6 +1,9 @@
 # receptivo
 
-This is a package developed to save work, time, resources on unit tests. Returning a response of two, the one expected or the result or fill value, which has been passed if the condition is not met. In its simplest functionality.
+This is a package developed to save work, time, resources on unit tests. 
+
+Returning a response of two, the one expected or the result or fill value, 
+which has been passed if the condition is not met. In its simplest functionality.
 
 ```js
 const receptive = require('receptive')
@@ -15,12 +18,18 @@ receptive.value(error, trust, receptive.paddingOne);//return 0.
 trust = true;
 
 receptive.value(error, trust, receptive.paddingOne);//return true.
-
-/* Etc...
--------------------------------------------------------------------------------*/
-receptive.value("false", "true", receptive.paddingOne);
-receptive.valueOptionTwo("false", "true", receptive.paddingTwo, receptive.paddingThree)
 ```
+
+## Functions
+`value(value, equivalent, res)` 
+
+`valueOrElse(value, equivalent, res, otherwise)` 
+
+`operator(value, "operator", equivalent)` 
+- receives three parameters the **value** to compare the **operator** and the **equivalent** of the value, if the condition is met it returns the equivalent.
+
+`operatorPlus(value, "operator", equivalent, return)` 
+- the same as the **operator()** function but in this case it returns the fourth parameter, if the condition is met.
 
 ## More ways to take advantage of its functionality
 

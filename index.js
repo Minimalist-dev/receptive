@@ -16,22 +16,71 @@ class Receptive {
     static get paddingThree()   { return this._paddingThree;    }
     
     static
-    value(not, yes, res) {
-        if(not === yes) { return res; } 
-        else { return yes; }
+    value(value, equivalent, res) {
+        if(value === equivalent) { return res; } 
+        else { return equivalent; }
     }
     static
-    valueOptionTwo(not, yes, res, value) {
-        if(not === yes) { return res; } 
-        else { return value; }
+    valueOrElse(value, equivalent, res, otherwise) {
+        if(value === equivalent) { return res; } 
+        else { return otherwise; }
     }
     static
-    back() {
-        window.history.back();
+    valueOptionTwo(value, equivalent, res, otherwise) {
+        if(value === equivalent) { return res; } 
+        else { return otherwise; }
     }
     static
-    forward() {
-        window.history.forward();
+    operator(value, operator, equivalent) {
+        switch(operator) {
+            case "===":
+                if(value === equivalent) { return Number(equivalent); } else { return 0; } break;
+            case "==":
+                if(value == equivalent)  { return Number(equivalent); } else { return 0; } break;
+            case "!==":
+                if(value !== equivalent) { return Number(equivalent); } else { return 0; } break;
+            case "!=":
+                if(value != equivalent)  { return Number(equivalent); } else { return 0; } break;
+            case ">":
+                if(value > equivalent)   { return Number(equivalent); } else { return 0; } break;
+            case ">=":
+                if(value >= equivalent)  { return Number(equivalent); } else { return 0; } break;
+            case "<":
+                if(value < equivalent)   { return Number(equivalent); } else { return 0; } break;
+            case "<=":
+                if(value <= equivalent)  { return Number(equivalent); } else { return 0; } break;
+            default:
+                return false;
+            break;
+        }
+        
+        return false;
+    }
+    static
+    operatorPlus(value, operator, equivalent, res) {
+        switch(operator) {
+            case "===":
+                if(value === equivalent) { return res; } else { return ""; } break;
+            case "==":
+                if(value == equivalent)  { return res; } else { return ""; } break;
+            case "!==":
+                if(value !== equivalent) { return res; } else { return ""; } break;
+            case "!=":
+                if(value != equivalent)  { return res; } else { return ""; } break;
+            case ">":
+                if(value > equivalent)   { return res; } else { return ""; } break;
+            case ">=":
+                if(value >= equivalent)  { return res; } else { return ""; } break;
+            case "<":
+                if(value < equivalent)   { return res; } else { return ""; } break;
+            case "<=":
+                if(value <= equivalent)  { return res; } else { return ""; } break;
+            default:
+                return false;
+            break;
+        }
+        
+        return false;
     }
     static
     capitalize(word){
