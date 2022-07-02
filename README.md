@@ -18,18 +18,15 @@ receptive.value(error, trust, receptive.paddingOne);//return 0.
 trust = true;
 
 receptive.value(error, trust, receptive.paddingOne);//return true.
-
-/* Etc...
--------------------------------------------------------------------------------*/
-receptive.value("false", "true", receptive.paddingOne);
-receptive.valueOptionTwo("false", "true", receptive.paddingTwo, receptive.paddingThree)
 ```
 
 ## Functions
-`operator(value, operator, equivalent)` 
+`value(not, yes, res)` 
+`valueOptionTwo(not, yes, res, otherwise)` 
+`operator(value, "operator", equivalent)` 
 - receives three parameters the **value** to compare the **operator** and the **equivalent** of the value, if the condition is met it returns the equivalent.
 
-`operatorPlus(value, operator, equivalent, return)` 
+`operatorPlus(value, "operator", equivalent, return)` 
 - the same as the **operator()** function but in this case it returns the fourth parameter, if the condition is met.
 
 ## More ways to take advantage of its functionality
